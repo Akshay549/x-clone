@@ -70,10 +70,10 @@ const LeftBar = () => {
         <>
             <div>
                 {/* Logo menu and button */}
-                <div className=''>
+                <div className='flex flex-col justify-center xl:justify-start items-center xxl:contents '>
                     {/* Logo */}
-                    <Link href="/" className='flex items-center p-2'>
-                        <Image src="/logo.png" alt='logo' width={24} height={24} />
+                    <Link href="/" className='flex  items-center p-2'>
+                        <Image src="/logo.png" alt='logo' width={28} height={28} />
                     </Link>
                     {/* Menu List */}
                     <div className='flex flex-col'>
@@ -94,7 +94,7 @@ const LeftBar = () => {
                     </div>
                     {/* Button */}
                     <Link href="/"
-                        className='xxl:hidden my-4 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center '
+                        className='xxl:hidden my-4 bg-white text-black rounded-full h-8 w-8 xxl:h-12  m-2 xxl:m-0 xxl:w-12 flex items-center justify-center '
                     >
                         <Image src="icons/post.svg" alt='new post' width={24} height={24} />
                     </Link>
@@ -105,14 +105,14 @@ const LeftBar = () => {
                     </Link>
                 </div>
                 {/* User */}
-                <div className='flex items-center justify-between'>
-                    <div className='flex items-center gap-2'>
-                        <div className='h-10 w-10 relative rounded-full overflow-hidden'>
-                            <Image src="/general/avatar.png" alt='lama dev' fill />
+                <div className='flex items-center justify-center  xxl:justify-between'>
+                    <div className='flex  items-center gap-2'>
+                        <div className='h-8 w-8 xxl:h-10  xxl:w-10 relative rounded-full overflow-hidden'>
+                            <Image src="/avatarNew.png" alt='lama dev' fill />
                         </div>
                         <div className='hidden xxl:flex flex-col'>
-                            <span className='font-bold'>Lama Dev</span>
-                            <span className='text-sm text-textGray'>@lamaWebDev</span>
+                            <span className='font-bold'>Akshay Akhade</span>
+                            <span className='text-sm text-textGray'>@akWebDev</span>
                         </div>
                     </div>
                     <div className='hidden xxl:block cursor-pointer font-bold'>...</div>
